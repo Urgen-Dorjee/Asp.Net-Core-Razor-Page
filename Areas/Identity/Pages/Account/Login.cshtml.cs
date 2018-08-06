@@ -4,12 +4,12 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
-using Blog.Data.Entities;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using Urgen.Website.Data.Entities;
 
 namespace Urgen.Website.Areas.Identity.Pages.Account
 {
@@ -29,6 +29,7 @@ namespace Urgen.Website.Areas.Identity.Pages.Account
         public InputModel Input { get; set; }
 
         public IList<AuthenticationScheme> ExternalLogins { get; set; }
+        public string Message { get; set; }
 
         public string ReturnUrl { get; set; }
 
@@ -78,6 +79,7 @@ namespace Urgen.Website.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in.");
+                    Message = "Welcome";
                     return LocalRedirect(returnUrl);
                 }
                 if (result.RequiresTwoFactor)

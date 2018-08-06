@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Blog.Data.Entities
+namespace Urgen.Website.Data.Entities
 {
     public class AuditableEntity
     {

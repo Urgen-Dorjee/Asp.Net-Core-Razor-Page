@@ -1,6 +1,4 @@
 ﻿using System;
-using Blog.Data.DataService;
-using Blog.Data.Entities;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;

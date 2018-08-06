@@ -1,5 +1,4 @@
-﻿using Blog.Data.Entities;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
@@ -7,8 +6,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Urgen.Website.Data.Entities;
 
-namespace Blog.Data.DataService
+namespace Urgen.Website.Data.DataService
 {
     public class BlogRepository : IBlogRepository
     {

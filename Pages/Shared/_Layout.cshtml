@@ -13,6 +13,7 @@
         <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
         <link href="~/fontawesome/css/all.css" rel="stylesheet" />
         <link href="~/css/site.css" rel="stylesheet" />
+        <link href="~/css/techpost.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Lora:400i,700i" rel="stylesheet">
     </environment>
     <environment exclude="Development">
@@ -42,8 +43,9 @@
             </div>
         </div>
     </nav>
-    <div class="container body-content">
+    <div class="container-fluid body-content">
         @RenderBody()
+
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year : Urgen Blog Website</p>

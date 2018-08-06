@@ -4,12 +4,12 @@ using System.ComponentModel.DataAnnotations;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
-using Blog.Data.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using Urgen.Website.Data.Entities;
 
 namespace Urgen.Website.Areas.Identity.Pages.Account
 {
@@ -35,6 +35,7 @@ namespace Urgen.Website.Areas.Identity.Pages.Account
 
         [BindProperty]
         public InputModel Input { get; set; }
+        public string  Message { get; set; }
 
         public string ReturnUrl { get; set; }
 

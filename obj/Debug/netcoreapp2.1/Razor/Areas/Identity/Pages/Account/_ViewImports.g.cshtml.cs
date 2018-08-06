@@ -24,7 +24,7 @@ using Urgen.Website.Areas.Identity;
 #line default
 #line hidden
 #line 3 "C:\Users\urgen\Desktop\Asp.Net Core Project\BlogPlayground\Urgen.Website\Urgen.Website\Areas\Identity\Pages\_ViewImports.cshtml"
-using Blog.Data.Entities;
+using Urgen.Website.Data.Entities;
 
 #line default
 #line hidden
@@ -34,7 +34,7 @@ using Urgen.Website.Areas.Identity.Pages.Account;
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"cf58e93a637e3cac438913de02b5bc81f83d6ab2", @"/Areas/Identity/Pages/Account/_ViewImports.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c1736de0a37049ea9e4de83554b2719a817cebaf", @"/Areas/Identity/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0b121e50b31be6104c2b95fa860c386b256f4c20", @"/Areas/Identity/Pages/_ViewImports.cshtml")]
     public class Areas_Identity_Pages_Account__ViewImports : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

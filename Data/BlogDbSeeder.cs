@@ -1,14 +1,14 @@
-﻿using Blog.Data.DataService;
-using Blog.Data.Entities;
-using Microsoft.AspNetCore.Hosting;
+﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Urgen.Website.Data.DataService;
+using Urgen.Website.Data.Entities;
 
-namespace Blog.Data
+namespace Urgen.Website.Data
 {
     public class BlogDbSeeder
     {
@@ -26,7 +26,7 @@ namespace Blog.Data
         {
             _ctx.Database.EnsureCreated();
 
-            var user = await _userManager.FindByEmailAsync("urgen0240@gmail.com");
+            var user = await _userManager.FindByEmailAsync("mem0240@gmail.com");
             var user1 = await _userManager.FindByEmailAsync("taykorksang@yahoo.com");
 
             if (user == null)
@@ -35,8 +35,8 @@ namespace Blog.Data
                 {
                     FirstName = "Urgen",
                     LastName = "Dorjee",
-                    UserName = "urgen0240@gmail.com",
-                    Email = "urgen0240@gmail.com"
+                    UserName = "mem0240@gmail.com",
+                    Email = "mem0240@gmail.com"
                 };
 
                 user1 = new User()
@@ -47,7 +47,7 @@ namespace Blog.Data
                     Email = "taykorksang@yahoo.com"
                 };
                 var result1 = await _userManager.CreateAsync(user1, "Passw0rd!");
-                var result = await _userManager.CreateAsync(user, "P@ssw0rd!");
+                var result = await _userManager.CreateAsync(user, "Passw0rd!");
 
                 if (result1 != IdentityResult.Success)
                 {

@@ -5,12 +5,14 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Blog.Pages.Travel
+namespace Urgen.Website.Pages.Travel
 {
     public class IndexModel : PageModel
     {
+        public string Message { get; set; }
         public void OnGet()
         {
+            Message = "Hello World";
         }
     }
 }
