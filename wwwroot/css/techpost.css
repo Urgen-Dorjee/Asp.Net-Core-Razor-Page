@@ -22,8 +22,12 @@
     text-align: justify;
 }
 
-img {
-    width: 100vw;
+.myImages {
+    background-image:url("/images/mount.jpg");
+    background-repeat:no-repeat;
+    height: 400px;
+    background-size: cover;
+   
 }
 
 #site-hero .cover-img {
@@ -56,12 +60,10 @@ img {
 .vertical-center {
     display: table-cell;
     vertical-align: middle;
-    margin: 0;
+    margin: 0px;
 }
 
-.container-fluid {
-    padding-right: 15px;
-    padding-left: 15px;
+.container-fluid { 
     margin-right: auto;
     margin-left: auto;
 }
@@ -103,7 +105,7 @@ p {
     position: relative;
 }
 
-.fa-thumb-tack {
+.fa-thumbtack {
     transform: scale(1.2) rotate(45deg);
 }
 
@@ -124,6 +126,111 @@ hr {
         margin-top: 50px;
         border: solid;
     }
-.container body-content {
+/*.container body-content {
     width: 100vw; 
+}*/
+
+section {
+    margin-left: 10px;
+}
+.fa {
+    padding: 10px;
+    border-radius: 50%;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px;
+   
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background: #d6249f;
+    color: #fff;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-rss {
+    background: #ff6600;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+@keyframes yourAnimation {
+    0% {
+        transform: rotate(0) scale(0.8) translateX(30px) skewX(30deg);
+        opacity: 0;
+    }
+
+    41% {
+        transform: rotate(xx) scale(0.2);
+    }
+
+    100% {
+        transform: rotate(0) scale(1) translateX(30px) skewX(0deg);
+        opacity: 1;
+    }
+}
+
+.elementToAnimate {
+    animation: yourAnimation 1s forwards 0s ease;
+}
+
+.row {
+    margin-top: 20px;
+}
+.col-lg-3 {
+    margin-top: 20px;
+}
+
+.fa-user {
+    color: green;    
+    margin-left: -10px;
+}
+.fa-calendar {
+    color: green;
+}
+
+#contd {
+    font-size: 1.2em;
+    font-weight: bold;
+  
+}
+.fa-thumbtack {
+    transform: scale(1.2) rotate(45deg);
+    color: green;
+    margin-left: -10px;
+}
+
+.fa-calender {
+    color: green;
+    margin-left: -10px;
+}
+#Title {
+  text-transform: uppercase;
+}
+ol, ul, dl {
+    margin-left: -15px;
+}
+.container {
+    margin-top: 80px;
+
 }

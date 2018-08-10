@@ -1,0 +1,46 @@
+﻿@page "{TechId:guid}"
+@model TechDetailModel
+
+@{
+    ViewData["Title"] = "Technology";
+}
+
+<div class="container">
+    <div class="myImages">
+
+    </div>
+</div>
+<hr>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-8">
+            <h2 class="Title animated zoomIn">@Model.TechPost.Title</h2>
+            <div class="form-group">
+                <div class="form-inline">
+                    <section class="text-muted" style="font-family: lora" id="date">
+                        <span class="fa fa-thumbtack"></span>Posted On:
+                    </section>
+                    <section>
+                        <i class="fa fa-calendar"></i>@(Model.TechPost.PostCreatedDate.ToString("MMM dd, yyyy"))
+                    </section>
+                    <section class="text-muted" id="name">
+                        <i class="fa fa-user"></i>By: @Model.TechPost.User.FirstName @Model.TechPost.User.LastName
+                    </section>
+                </div>
+            </div>
+            <hr class="my-4">
+            <p class="description">@Model.TechPost.Description </p>
+            <hr class="my-3">
+            <div>
+                <a asp-page="Index" class="btn btn-outline-primary">
+                    <i class="fa fa-chevron-left"></i>Back
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <partial name="_Sidebar" />
+        </div>
+    </div>
+</div>
+
+

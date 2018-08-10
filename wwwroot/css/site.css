@@ -51,3 +51,13 @@ for details on configuring this project to bundle and minify static web assets. 
 .container-fluid {
     width: 100vw;
 }
+.fa-thumbtack {
+    transform: scale(1.2) rotate(45deg);
+    color: green;
+    margin-left: -10px;
+}
+
+.fa-calender {
+    color: green;
+    margin-left: -10px;
+}

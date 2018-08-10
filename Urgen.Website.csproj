@@ -5,6 +5,10 @@
     <UserSecretsId>aspnet-Urgen.Website-3C96DE3F-2043-438C-BD8A-41D088A8A7D3</UserSecretsId>
   </PropertyGroup>
 
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\css\animate.css" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="7.0.1" />

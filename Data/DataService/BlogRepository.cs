@@ -23,20 +23,14 @@ namespace Urgen.Website.Data.DataService
             _user = user;
         }
 
-        public IList<TechPost> ShowAllTechPostsForUser()
+        public async Task<IList<TechPost>> ShowAllTechPostsForUser()
         {
-            return _ctx.TechPosts
-                        .Include(x => x.User)
-                        .OrderBy(u => u.PostCreatedDate)
-                        .ToList();
+            return await _ctx.TechPosts.Include(x => x.User).OrderBy(u => u.PostCreatedDate).ToListAsync();
         }
-        public TechPost GetTechPostForUser(Guid techId)
+        public async Task<TechPost> GetTechPostForUser(Guid techId)
         {
-
-            return _ctx.TechPosts
-                       .Include(x => x.User)
-                       .Where(t => t.TechId == techId)
-                       .FirstOrDefault();
+            return await _ctx.TechPosts.Include(x => x.User).Where(t => t.TechId == techId).FirstOrDefaultAsync();
+         
         }
         public void AddTechBlogPost(string UserId, TechPost TPost)
         {
@@ -59,12 +53,12 @@ namespace Urgen.Website.Data.DataService
             //no code in this implementation..
         }
 
-        public IList<TravelPost> ShowAllTravelPostsForUser()
+        public async Task<IList<TravelPost>> ShowAllTravelPostsForUser()
         {
-            return _ctx.TravelPosts
+            return await _ctx.TravelPosts
                        .Include(x => x.User)
                        .OrderBy(u => u.PostCreatedDate)
-                       .ToList();
+                       .ToListAsync();
         }
         public TravelPost GetTravelPostForUser(Guid Tid)
         {

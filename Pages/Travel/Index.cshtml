@@ -1,6 +1,61 @@
 ﻿@page
 @model IndexModel
+
 @{
+    ViewData["Title"] = "Travel";
 }
 
-@Model.Message
+<div class="content-row" id="travel-hero">
+    <div class="travel-img">
+        <div class="vertical-table">
+            <div class="vertical-center">
+                <div class="container-fluid">
+                    <div class="content-wrapper">
+                        <div class="col-sm-12">
+                            <h1 class="entry-title">Welcome</h1>
+                            <p class="travelTitle" style="font-family: lora">Let's explore the beauty of Nature and test our Endurance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br />
+
+@if (Model.HasTravelPost)
+{
+    <div class="row">
+        <div class="col-lg-9 col-md-8 col-sm-8">
+            <div class="row">
+                @foreach (var T in Model.TravelPosts)
+                {
+                    <div class="col-lg-4">
+                        <div class="card h-100 w-80">
+                            <div class="card-body">
+                                <a asp-page="TechDetail" asp-route-TechId="@T.TravelId" class="card-title" id="Title">@Html.DisplayFor(m => T.Title)</a>
+                                <section class="card-text text-muted" id="name"><i class="fa fa-user"></i>Post By: @Html.DisplayFor(m => T.User.FirstName) @Html.DisplayFor(m => T.User.LastName)</section>
+                                <section class="card-text text-muted" id="run"><span class="fa fa-thumbtack"></span>Post On:<i class="fa fa-calendar"></i>@Html.DisplayFor(m => T.PostCreatedDate)</section>
+                                <hr>
+                                <p class="card-text" id="description">
+                                    @Html.DisplayFor(m => T.Description)
+                                </p>
+                                <a asp-page="TechDetail" asp-route-TechId="@T.TravelId" class="btn btn-outline-primary" id="contd">Read More >> </a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <partial name="_Sidebar" />
+        </div>
+    </div>
+}
+else
+{
+    <p>No TravelPosts found </p>
+    <a class="btn btn-outline-primary">Post a Travel Blog</a>
+}

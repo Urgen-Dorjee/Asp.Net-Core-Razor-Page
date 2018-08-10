@@ -14,6 +14,7 @@ namespace Urgen.Website.Data.Entities
         public string Title { get; set; }
         [Required]
         public string Description { get; set; }
+        [DisplayFormat(ApplyFormatInEditMode =true, DataFormatString = "{0:MMM dd, yyyy}")]
         public DateTime PostCreatedDate { get; set; }
         public User User { get; set; }
     }

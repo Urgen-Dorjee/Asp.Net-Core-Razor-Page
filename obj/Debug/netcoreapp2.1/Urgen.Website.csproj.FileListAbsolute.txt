@@ -39,3 +39,6 @@ C:\Users\urgen\Desktop\Asp.Net Core Project\BlogPlayground\Urgen.Website\Urgen.W
 C:\Users\urgen\Desktop\Asp.Net Core Project\BlogPlayground\Urgen.Website\Urgen.Website\bin\Debug\netcoreapp2.1\Urgen.Website.Views.pdb
 C:\Users\urgen\Desktop\Asp.Net Core Project\BlogPlayground\Urgen.Website\Urgen.Website\obj\Debug\netcoreapp2.1\Urgen.Website.Views.pdb
 C:\Users\urgen\Desktop\Asp.Net Core Project\BlogPlayground\Urgen.Website\Urgen.Website\obj\Debug\netcoreapp2.1\Urgen.Website.csprojAssemblyReference.cache
+C:\Users\urgen\Desktop\Asp.Net Core Project\BlogPlayground\Urgen.Website\Urgen.Website\obj\Debug\netcoreapp2.1\Razor\Pages\Sidebar\Index.g.cshtml.cs
+C:\Users\urgen\Desktop\Asp.Net Core Project\BlogPlayground\Urgen.Website\Urgen.Website\obj\Debug\netcoreapp2.1\Razor\Pages\Shared\_Sidebar.g.cshtml.cs
+C:\Users\urgen\Desktop\Asp.Net Core Project\BlogPlayground\Urgen.Website\Urgen.Website\obj\Debug\netcoreapp2.1\Razor\Pages\Tech\TechDetail.g.cshtml.cs

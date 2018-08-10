@@ -1,0 +1,39 @@
+#travel-hero .travel-img {
+    min-height: 40vh;
+    background-image: url("/images/travelcover.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.9);
+    font-size: 1.1em;
+    background-size: cover;
+}
+#travel-hero .travel-img {
+    background-color: rgba(25,25,25,0.9);
+    margin-bottom: -55px;
+    position: relative;
+    font-size: 1.1em;
+    overflow-x: hidden;
+}
+
+#travel-hero .vertical-table {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+    min-height: inherit;
+    padding: 95px 0 40px 0;
+}
+#travel-hero {
+    font-size: 1.7em;
+    margin-left: -15px;
+    width: 100vw;
+}
+#travel-hero h1, #travel-hero p {
+        color: #fcfcfc;
+        text-align: center;
+        margin-top: 0;
+ }
+.travelTitle {
+    color: #ffcb00;
+}
+    

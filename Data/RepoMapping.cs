@@ -18,10 +18,10 @@ namespace Urgen.Website.Data
             //              $"{src.FirstName} {src.LastName}"));
             //    CreateMap<UserForCreationDto, User>();
 
-            CreateMap<TechPost, TechPostDto>()
-                          .ForMember(dest => dest.Name, opt => opt.MapFrom(src =>
-                             $"{src.User.FirstName} {src.User.LastName}"));
-             CreateMap<TechPostDto, TechPost>();
+            //CreateMap<TechPost, TechPostDto>()
+            //              .ForMember(dest => dest.Name, opt => opt.MapFrom(src =>
+            //                 $"{src.User.FirstName} {src.User.LastName}"));
+            // CreateMap<TechPostDto, TechPost>();
 
             //    CreateMap<TravelPost, TravelPostDto>();       
         }

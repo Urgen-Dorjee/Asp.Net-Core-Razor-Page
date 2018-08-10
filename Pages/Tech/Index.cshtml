@@ -21,68 +21,36 @@
     </div>
 </div>
 
-<hr />
+<br />
 
-
-@if(Model.HasTechPost)
-{
-    <table class="table">
-        <thead>
-            <tr>
-                <th>@Html.DisplayNameFor(m => m.TechPosts[0].Title)</th>
-                <th>@Html.DisplayNameFor(m => m.TechPosts[0].User.UserName)</th>
-                <th>@Html.DisplayNameFor(m => m.TechPosts[0].PostCreatedDate)</th>
-                <th>@Html.DisplayNameFor(m => m.TechPosts[0].Description)</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach(var Techs in Model.TechPosts)
-            {
-            <tr>
-                <td>@Html.DisplayFor(m => Techs.Title)</td>
-                <td>@Html.DisplayFor(m => Techs.User.UserName)</td>                
-                <td>@Html.DisplayFor(m => Techs.PostCreatedDate)</td>
-                <td>@Html.DisplayFor(m => Techs.Description)</td>
-               
-            </tr>
-
-            }
-        </tbody>
-    </table>
-
-}
-
-@*@if (Model.TechPosts.Count > 0)
+@if (Model.HasTechPost)
 {
     <div class="row">
-        <div class="col-lg-12 col-md-8 col-sm-12">
+        <div class="col-lg-9 col-md-8 col-sm-8">
             <div class="row">
-                <div class="col-lg-9 col-md-8 col-sm-8">
-                    <div class="row">
-                        @foreach (var Techs in Model.TechPosts)
-                        {
-                            <div class="col-4 ml-sm-1">
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <a asp-page="/TechDetail" class="card-title" id="Title">@Html.DisplayNameFor(m => m.Techs.)</a>
-                                        <section class="card-text" id="name"><i class="fa fa-user"></i>Post By: T.name</section>
-                                        <section class="card-text text-muted" id="run"><span class="fa fa-thumb-tack"></span>Post On:<i class="fa fa-calendar"></i>T.postCreatedDate </section>
-                                        <hr>
-                                        <p class="card-text" id="description">
-                                            T.description
-                                        </p>
-                                        <a asp-page="/TechDetails" class="btn btn-outline-primary btn-sm">Continue Reading  >> </a>
-                                    </div>
-                                </div>
+                @foreach (var Techs in Model.TechPosts)
+                {
+                    <div class="col-lg-4">
+                        <div class="card h-100 w-80">
+                            <div class="card-body">
+                                <a asp-page="TechDetail" asp-route-TechId="@Techs.TechId" class="card-title" id="Title">@Html.DisplayFor(m => Techs.Title)</a>
+                                <section class="card-text text-muted" id="name"><i class="fa fa-user"></i>Post By: @Html.DisplayFor(m => Techs.User.FirstName) @Html.DisplayFor(m=> Techs.User.LastName)</section>
+                                <section class="card-text text-muted" id="run"><span class="fa fa-thumbtack"></span>Post On:<i class="fa fa-calendar"></i>@Html.DisplayFor(m => Techs.PostCreatedDate)</section>
+                                <hr>
+                                <p class="card-text" id="description">
+                                    @Html.DisplayFor(m => Techs.Description)
+                                </p>
+                                <a asp-page="TechDetail" asp-route-TechId="@Techs.TechId" class="btn btn-outline-primary" id="contd">Read More >> </a>
                             </div>
-                        }
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-lg-3">
-                    <sidebar></sidebar>
-                </div>
+                }
             </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <partial name="_Sidebar" />
         </div>
     </div>
 }
@@ -90,4 +58,6 @@ else
 {
     <p>No TechPosts found </p>
     <a class="btn btn-outline-primary">Post a Tech Blog</a>
-}*@
+}
+
+

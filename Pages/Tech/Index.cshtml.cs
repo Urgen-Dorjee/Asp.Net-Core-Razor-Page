@@ -26,35 +26,15 @@ namespace Urgen.Website.Pages.Tech
             _map = mapper;
         }
         
-        public IList<TechPost> TechPosts { get; set; }
-        
-        public string Message { get; set; }
-        public bool HasTechPost { get; set; }
-        public IActionResult OnGet()
+        public IList<TechPost> TechPosts { get; set; }   
+        public bool HasTechPost => TechPosts.Count > 0;
+        public async Task<IActionResult> OnGetAsync()
         {
 
-            var TechPostsFromRepo = _repo.ShowAllTechPostsForUser();
-            if(TechPostsFromRepo.Count > 0)
-            {
-                HasTechPost = true;
-            }
-            else
-            {
-                HasTechPost = false;
-            }
-            var TechPosts = _map.Map<IEnumerable<TechPostDto>>(TechPostsFromRepo);
+            TechPosts = await _repo.ShowAllTechPostsForUser();    
             return Page();
        
-        }
-
-        
-
-        public class TechPostDto : TTGetPostsDto
-        {
-            public Guid TechId { get; set; }           
-
-        } 
-        
+        }                
 
     }
 }

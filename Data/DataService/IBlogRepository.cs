@@ -9,13 +9,13 @@ namespace Urgen.Website.Data.DataService
 {
     public interface IBlogRepository
     {
-        IList<TechPost> ShowAllTechPostsForUser();
-        TechPost GetTechPostForUser(Guid techId);
+        Task<IList<TechPost>> ShowAllTechPostsForUser();
+        Task<TechPost> GetTechPostForUser(Guid techId);
         void AddTechBlogPost(string UserId, TechPost TPost);
         void DeleteTechPost(TechPost TPost);
         void UpdateTechPostForUser(TechPost TPost);
 
-        IList<TravelPost> ShowAllTravelPostsForUser();
+        Task<IList<TravelPost>> ShowAllTravelPostsForUser();
         TravelPost GetTravelPostForUser(Guid id);
         void AddTravelBlogPost(TravelPost TPost);
         void DeleteTravelPost(TravelPost TPost);
