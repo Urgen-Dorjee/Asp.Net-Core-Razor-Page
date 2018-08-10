@@ -1,0 +1,12 @@
+﻿.loginname {
+    margin-top: 5px;
+    margin-right: 20px;
+}
+
+.loginname:hover, .loginname:focus{
+    color: #39ff00;
+}
+
+@media(min-width:990px){
+   
+}

@@ -29,11 +29,14 @@
     width: 100vw;
 }
 #travel-hero h1, #travel-hero p {
-        color: #fcfcfc;
+       
         text-align: center;
         margin-top: 0;
  }
 .travelTitle {
     color: #ffcb00;
+}
+#travel-hero h1 {
+    color: #fcfcfc;
 }
     

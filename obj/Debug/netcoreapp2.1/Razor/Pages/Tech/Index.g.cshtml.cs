@@ -111,7 +111,7 @@ using Urgen.Website.Data.Entities;
             WriteLiteral("                    <div class=\"col-lg-4\">\r\n                        <div class=\"card h-100 w-80\">\r\n                            <div class=\"card-body\">\r\n                                ");
             EndContext();
             BeginContext(1046, 126, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b5cb747c536c4fa582b45ed8ce62ab3f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a206b52e677342759698310fe98a8dc2", async() => {
                 BeginContext(1135, 33, false);
 #line 36 "C:\Users\urgen\Desktop\Asp.Net Core Project\BlogPlayground\Urgen.Website\Urgen.Website\Pages\Tech\Index.cshtml"
                                                                                                                    Write(Html.DisplayFor(m => Techs.Title));
@@ -192,7 +192,7 @@ using Urgen.Website.Data.Entities;
             WriteLiteral("\r\n                                </p>\r\n                                ");
             EndContext();
             BeginContext(1854, 118, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7f2e3e18e0ce40f585845e0c310740c5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a0e21b03f4344e9cbff7674d57b0d52a", async() => {
                 BeginContext(1955, 13, true);
                 WriteLiteral("Read More >> ");
                 EndContext();
@@ -238,7 +238,7 @@ using Urgen.Website.Data.Entities;
             WriteLiteral("            </div>\r\n        </div>\r\n\r\n        <div class=\"col-lg-3 col-md-4 col-sm-6\">\r\n            ");
             EndContext();
             BeginContext(2191, 27, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "fde64b8063314443b3f8f1456307ff68", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "440a68464462437bae33bde876970eb7", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();

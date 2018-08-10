@@ -196,6 +196,7 @@ section {
 
 .row {
     margin-top: 20px;
+    margin-left:1px;
 }
 .col-lg-3 {
     margin-top: 20px;
@@ -233,4 +234,8 @@ ol, ul, dl {
 .container {
     margin-top: 80px;
 
+}
+
+h2 {
+    margin-top: 20px;
 }
