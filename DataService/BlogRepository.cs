@@ -60,11 +60,11 @@ namespace Urgen.Website.Data.DataService
                        .OrderBy(u => u.PostCreatedDate)
                        .ToListAsync();
         }
-        public TravelPost GetTravelPostForUser(Guid Tid)
+        public async Task<TravelPost> GetTravelPostForUser(Guid Tid)
         {
-            return _ctx.TravelPosts
+            return await _ctx.TravelPosts
                        .Include(u => u.User)
-                       .Where(t => t.TravelId == Tid).FirstOrDefault();
+                       .Where(t => t.TravelId == Tid).FirstOrDefaultAsync();
         }
         public void AddTravelBlogPost(TravelPost TPost)
         {

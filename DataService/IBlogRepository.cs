@@ -16,7 +16,7 @@ namespace Urgen.Website.Data.DataService
         void UpdateTechPostForUser(TechPost TPost);
 
         Task<IList<TravelPost>> ShowAllTravelPostsForUser();
-        TravelPost GetTravelPostForUser(Guid id);
+        Task<TravelPost> GetTravelPostForUser(Guid id);
         void AddTravelBlogPost(TravelPost TPost);
         void DeleteTravelPost(TravelPost TPost);
         void UpdateTravelPostForUser(TravelPost TPost);

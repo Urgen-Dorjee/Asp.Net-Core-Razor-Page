@@ -41,10 +41,12 @@ namespace Urgen.Website.Areas.Identity.Pages.Account
 
         public class InputModel
         {
+            [PersonalData]
             [Required, MaxLength(20, ErrorMessage = "First Name should not exceed more than 20 characters")]
             [Display(Name = "FirstName")]
             public string FirstName { get; set; }
 
+            [PersonalData]
             [Required, MaxLength(20, ErrorMessage = "Last Name should not exceed more than 20 characters")]
             [Display(Name = "LastName")]
             public string LastName { get; set; }

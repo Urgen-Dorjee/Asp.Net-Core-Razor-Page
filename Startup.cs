@@ -47,8 +47,8 @@ namespace Urgen.Website
                 {
                     opt.Conventions.AddPageRoute("/Tech/Index", "TechCorner");
                     opt.Conventions.AddPageRoute("/Travel/Index", "TravelCorner");
-                    opt.Conventions.AddPageRoute("/Tech/TechDetail", "TechDetailsPage");
-                    opt.Conventions.AddPageRoute("/Tech/TechDetail/{TechId}", "TechReview");
+                    opt.Conventions.AddPageRoute("/Tech/TechDetail/{TechId?}", "TechDetail");
+                    opt.Conventions.AddPageRoute("/Tech/TravelDetail/{TravelId?}", "TravelDetail");
                 })
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_1)
 

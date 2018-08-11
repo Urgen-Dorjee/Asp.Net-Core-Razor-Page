@@ -1,35 +1,28 @@
-﻿@page "{TechID:Guid}"
-@model TechDetailModel
-
+﻿@page "{TravelId:Guid}"
+@model TravelDetailModel
 @{
-    ViewData["Title"] = "Technology";
 }
 
-@*<div class="container">
-    <div class="myImages">
 
-    </div>
-</div>
-<hr>*@
 <div class="container-fluid mt-lg-5">
     <div class="row">
         <div class="col-lg-8">
-            <h2 class="Title animated zoomIn">@Model.TechPost.Title</h2>
+            <h2 class="Title animated zoomIn">@Model.TravelPost.Title</h2>
             <div class="form-group">
                 <div class="form-inline">
                     <section class="text-muted" style="font-family: lora" id="date">
                         <span class="fa fa-thumbtack"></span>Posted On:
                     </section>
                     <section>
-                        <i class="fa fa-calendar"></i>@(Model.TechPost.PostCreatedDate.ToString("MMM dd, yyyy"))
+                        <i class="fa fa-calendar"></i>@(Model.TravelPost.PostCreatedDate.ToString("MMM dd, yyyy"))
                     </section>
                     <section class="text-muted" id="name">
-                        <i class="fa fa-user"></i>By: @Model.TechPost.User.FirstName @Model.TechPost.User.LastName
+                        <i class="fa fa-user"></i>By: @Model.TravelPost.User.FirstName @Model.TravelPost.User.LastName
                     </section>
                 </div>
             </div>
             <hr class="my-4">
-            <p class="description">@Model.TechPost.Description </p>
+            <p class="description">@Model.TravelPost.Description </p>
             <hr class="my-3">
             <div>
                 <a asp-page="Index" class="btn btn-outline-primary btn-sm" style="border: 1px solid; border-radius:5px;padding-left:9px;">
@@ -42,5 +35,3 @@
         </div>
     </div>
 </div>
-
-

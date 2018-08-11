@@ -7,6 +7,25 @@
     color: #39ff00;
 }
 
-@media(min-width:990px){
-   
+#registerheader {
+    -webkit-box-shadow: -20px -5px 50px 6px rgba(67,59,179,1);
+    -moz-box-shadow: -20px -5px 50px 6px rgba(67,59,179,1);
+    box-shadow: -20px -5px 50px 6px rgba(67,59,179,1);
+    border-radius: 5px;
+    padding: 20px;
+    color: Background;
+
+    background: rgb(226,226,226);
+    background: -moz-linear-gradient(-45deg, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%);
+    background: linear-gradient(135deg, rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=1 );
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+input {
+    font-family: lora;
+    font-weight: bold;
 }

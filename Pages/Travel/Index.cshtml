@@ -34,14 +34,14 @@
                     <div class="col-lg-4">
                         <div class="card h-100 w-80">
                             <div class="card-body">
-                                <a asp-page="TechDetail" asp-route-TechId="@T.TravelId" class="card-title" id="Title">@Html.DisplayFor(m => T.Title)</a>
+                                <a asp-page="TravelDetail" asp-route-TechId="@T.TravelId" class="card-title" id="Title">@Html.DisplayFor(m => T.Title)</a>
                                 <section class="card-text text-muted" id="name"><i class="fa fa-user"></i>Post By: @Html.DisplayFor(m => T.User.FirstName) @Html.DisplayFor(m => T.User.LastName)</section>
                                 <section class="card-text text-muted" id="run"><span class="fa fa-thumbtack"></span>Post On:<i class="fa fa-calendar"></i>@Html.DisplayFor(m => T.PostCreatedDate)</section>
                                 <hr>
                                 <p class="card-text" id="description">
                                     @Html.DisplayFor(m => T.Description)
                                 </p>
-                                <a asp-page="TechDetail" asp-route-TechId="@T.TravelId" class="btn btn-outline-primary" id="contd">Read More >> </a>
+                                <a asp-page="TravelDetail" asp-route-TechId="@T.TravelId" class="btn btn-outline-primary" id="contd">Read More >> </a>
                             </div>
                         </div>
                     </div>

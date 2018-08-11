@@ -211,9 +211,8 @@ section {
 }
 
 #contd {
-    font-size: 1.2em;
-    font-weight: bold;
-  
+    font-size: 1.2em;   
+    border: 1px solid;
 }
 .fa-thumbtack {
     transform: scale(1.2) rotate(45deg);
